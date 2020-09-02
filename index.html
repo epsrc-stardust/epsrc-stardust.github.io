@@ -1,0 +1,237 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <title>STARDUST: Session Types for Reliable Distributed Systems</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <meta name="theme-color" content="#563d7c">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/stardust.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--
+    <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Carousel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+    -->
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="star-image"></div>
+        <div class="container">
+          <div class="carousel-caption text-center">
+              <div class="logo">
+                <img src="assets/stardust-white.svg" alt="Stardust project logo"></img>
+              </div>
+              <h1>Session Types for Reliable Distributed Systems</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+  <div id="hero">
+    <div class="container">
+      <div class="carousel-caption text-left">
+        <img src="assets/stardust-white.svg" alt="Stardust project logo"></img>
+          <h1>Session Types for Reliable Distributed Systems</h1>
+      </div>
+    </div>
+  </div>
+  -->
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    <!-- Maybe later
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+
+    -->
+
+    <!-- START THE FEATURETTES -->
+    <div class="row featurette">
+      <div class="col-md-12">
+        <!-- <h2 class="featurette-heading">Overview</h2> -->
+        <p>
+        <span class="lead">
+          Distributed software systems are an essential part of the infrastructure 
+of modern society.
+        </span>
+Such systems typically comprise diverse software 
+components deployed across networks of hosts. Ensuring their reliability 
+is challenging, as software components must correctly communicate and 
+synchronise with each other, and any of the hardware or software 
+components may fail. Failure and service "outage" is extremely costly, 
+with worldwide financial losses due to software failures in 2017 
+estimated at US$1.7tn, up from US$1.1tn in 2016.
+        </p>
+
+        <p>
+        <span class="lead">
+Failures can occur at all levels of the system stack: hardware, 
+operating systems, networks, software, and users.
+        </span>
+Here we focus on using 
+advanced programming language technologies to enable the software level 
+to handle failures that arise from any level of the stack. Our aim is to 
+provide software-level reliability for distributed systems by combining 
+fault prevention with fault tolerance.
+<em>The key objective is to combine 
+the communication-structuring mechanism of session types with the 
+scalability and fault-tolerance of actor-based software architectures.
+</em>
+        </p>
+
+        <p>
+        <span class="lead">
+          The result will be a well-founded theory of reliable actor programming, 
+supported by a collection of libraries and tools, and validated on a 
+range of case studies.
+        </span>Key aims are to deliver tools that provide 
+lightweight support for developers – e.g. warning of potential issues – 
+and to allow developers to continue to use established idioms. By doing 
+so we aim to deliver a step change in the engineering of reliable 
+distributed software systems.
+        </p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+        <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Approach.</h2>
+        <p class="lead">The research approach of STARDUST is organised into three strands:
+        <em>Principles</em>, <em>Programming</em>, and <em>Practice</em>.
+        </p>
+        <p>
+        <h4>Principles</h4>
+        <p>
+        We will develop foundational theories of reliable session types for distributed actor systems.
+        Our models will capture the two prevalent means for failure recovery in actor-based languages: supervision
+trees and timeouts.
+        </p>
+        <h4>Programming</h4>
+        <p>
+        We will design, engineer and evaluate usable, open-source session type implementations and supporting tools for Erlang and Scala with Akka. We will develop type checking support for the enhanced session developed in the <em>Principles</em> strand, as well as a tool to help users to design session types for existing systems. These tools will be integrated with appropriate IDEs.
+        </p>
+        <h4>Practice</h4>
+        <p>
+The theory and tools will be guided by, and evaluated against, a set of case studies provided by our industrial partners. The application domains are: industrial automation (Actyx); server engineering (Erlang Solutions); microservices (Lightbend); testing tools (Quviq); and organisation simulation (Tata).
+        </p>
+      </div>
+      <div class="col-md-5 d-flex flex-wrap align-items-center">
+          <img class="img-fluid" src="assets/approach.png"
+             alt="Project approach: Reliable session types, programming, and practice">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-lg-12">
+        <h2 class="featurette-heading">People.</h2>
+      </div>
+      <div class="col-md-3">
+        <h3>
+          Glasgow
+        </h3>
+        <ul>
+          <li>Simon Fowler</li>
+          <li>Simon Gay</li>
+          <li>Phil Trinder</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3>
+          Kent
+        </h3>
+        <ul>
+          <li>Laura Bocchi</li>
+          <li>Simon Thompson</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h3>
+          Imperial
+        </h3>
+        <ul>
+          <li>Nobuko Yoshida</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/js/bootstrap.bundle.min.js"></script></body>
+</body>
+</html>
+
