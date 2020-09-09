@@ -373,3 +373,11 @@ a {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+
+.mono {
+  font-family: monospace;
+}
+
+.code-indent {
+  text-indent: 5%;
+}
