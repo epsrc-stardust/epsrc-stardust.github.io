@@ -78,8 +78,8 @@
               <td>14:00 - 15:30 (LT2)</td>
               <td>
                 Talks
-                <p>14:00: A Model of Grey Failures for actor-based systems (Laura Bocchi)</p>
-                <p>14:30: Special Delivery: Programming with Mailbox Types (Simon Fowler)</p>
+                <p>14:00: <a href="#kent_talk">A Model of Grey Failures for actor-based systems</a> (Laura Bocchi)</p>
+                <p>14:30: <a href="#glasgow_talk">Special Delivery: Programming with Mailbox Types</a> (Simon Fowler)</p>
                 <p>15:00: TBA</p>
               </td>
             </tr>
@@ -100,22 +100,7 @@
           </table>
            <h2 class="featurette-heading">Tuesday 13 September</h2>
           
-    
-    
-    9.00 - 9.50: Updates repeat by academic partners (5 min welcome + 10 min x 3 sites + 15 min discussion)
-
-9.50 - 10.30: Partners updates 1 (20 min - 10 x 2 +  20 discussion) 
-
-10.30-11.00 coffee
-
-11.00-11.40 Partners updates 2 (20 min - 10 x 2 +  20 discussion) 
-
-11.40 - 11.55: Duncan's talk
-
-11.55 - 12.30 discussion (case studies, future plans)
-
-12.30 - 13.30: lunch
-    
+  
     
     
           <table class="table">
@@ -153,6 +138,38 @@
             </tr>
           </table>
           
+         <h2 class="featurette-heading">Abstracts of the technican talks</h2>
+          
+          <ul>
+            <li> <a name="kent_talk">A model of grey failure for actor-based systems (by Laura Bocchi) </a><br>
+            Existing models for the analysis of concurrent processes tend
+to focus on fail-stop failures, where processes are either working or per-
+manently stopped, and their state (working/stopped) is known. In fact,
+systems are often affected by grey failures: failures that are latent, pos-
+sibly transient, and may affect the system in subtle ways that later lead
+to major issues (such as crashes, limited availability, overload). We in-
+troduce a model of actor-based systems with grey failures, based on
+two interlinked layers: an actor model, given as an asynchronous process
+calculus with discrete time, and a failure model that represents failure
+patterns to inject in the system. Our failure model captures not only
+fail-stop node and link failures, but also grey failures (e.g., partial, tran-
+sient). We give a behavioural equivalence relation based on weak barbed
+bisimulation to compare systems on the basis of their ability to recover
+from failures, and on this basis we define some desirable properties of re-
+liable systems. By doing so, we reduce the problem of checking reliability
+properties of systems to the problem of checking bisimulation. (joint work with Julien Lange, Simon Thompson, and Laura Voinea)
+            </li>
+            <li> <a name="glasgow_talk">Special Delivery: Programming with Mailbox Types (by Simon Fowler) <br>
+            Actor-based languages such as Erlang and Elixir are well-suited to distributed programming due to the concept of a *mailbox*:
+            a message queue local to each thread of execution. However, actor languages are vulnerable to subtle yet insidious programmer errors
+            such as protocol violations and communication mismatches, which can be difficult to locate and fix. Mailbox types, proposed by de'Liguoro and Padovani
+            in 2018, are a behavioural type system which captures the contents of a mailbox using a commutative regular expression, and can rule out common
+            communication errors such as protocol violations, payload mismatches, and some deadlocks. In this work, we present the first theoretical
+            and practical integration of mailbox types into a programming language. Unlike session type systems, the many-writer, single-reader nature of
+            mailboxes poses nontrivial challenges for language integration. We address these challenges through the use of Kobayashi's notion of quasi-linearity,
+            and develop a co-contextual algorithmic type system based on backwards bidirectional typing. (joint work with Simon Gay, Phil Trinder, and Franciszek Sowul)
+            </li>
+          </ul>
           
   </div><!-- /.container -->
 
