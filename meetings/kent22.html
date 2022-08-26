@@ -93,9 +93,11 @@
               <td>Foyer atrium</td>
             </tr>
             <tr>
-              <td>16:00 - 17:00 </td>
+              <td>16:00 - 17:30 </td>
               <td>
-                Talks (TBA)
+               <p> Talks (TBA) </p>
+                <p><a href="#ext">A Multiparty Session Typing Discipline for Fault-Tolerant Event-Driven Distributed Programming</a> (Raymond Hu)<br>
+                <p><a href="#glasgow_talk2">A Monitoring Tool for Linear-Time &#181;HML</a> (Duncan Attard)</p>
               </td>
               <td>LT2</td>
             </tr>
@@ -171,6 +173,33 @@ properties of systems to the problem of checking bisimulation. (joint work with 
             mailboxes poses nontrivial challenges for language integration. We address these challenges through the use of Kobayashi's notion of quasi-linearity,
             and develop a co-contextual algorithmic type system based on backwards bidirectional typing. (joint work with Simon Gay, Phil Trinder, and Franciszek Sowul)
             </li>
+            <li > <a name="glasgow_talk2" class=".header-text ">A Monitoring Tool for Linear-Time &#181;HML  </a>(by Duncan Attard)<br>
+            We present the implementation of a prototype tool that runtime checks specifications written in a maximally-expressive safety fragment of the linear-time modal &#181;-calculus called maxHML. Our technical development is founded on previous results that give a compositional synthesis procedure for generating monitors from maxHML formulae. This paper instantiates this synthesis to a first-order setting, where systems produce executions containing events that carry data. We augment the logic with predicates over data, and extend the synthesis procedure to generate executable monitors for Erlang, a general-purpose programming language. These monitors are instrumented via inlining to induce minimal runtime overhead. Our monitoring algorithm also maintains information, which it uses to explain how verdicts are reached.
+            (joint work with Luca Aceto, Antonis Achilleos, LŽo Exibard, Adrian Francalanza, and Anna Ing—lfsd—ttir).
+            </li>
+            <li><a name="ext" class=".header-text ">A Multiparty Session Typing Discipline for Fault-Tolerant Event-Driven Distributed Programming</a> (by Raymond Hu)<br>
+            Multiparty Session Types (MSTs) is a types systems approach to specifying
+multiparty message passing protocols and verifying their process
+implementations.  A long standing challenge for MSTs is reasoning about
+failure
+handling of protocol participants -- a crucial requirement for practical
+applicability of MSTs to many distributed systems.
+In this work, we draw inspiration from real-world distributed systems,
+notably
+Apache Spark, to develop an MST framework for fault-tolerant application
+protocols, supported by an event-driven model of session concurrency.  Our
+framework ensures communication safety and progress for well-typed
+systems in
+the presence of asynchronous and concurrent process failures; moreover,
+event-driven concurrency enables progress in the presence of multiple,
+concurrently interleaved sessions, which is not guaranteed in traditional
+session calculi.
+We have used our prototype Scala toolchain to implement a session-typed
+version
+of the Spark cluster manager, which is fully capable of running existing
+third-party Spark user applications without any code modification. (joint work with Malte Viering, Patrick Eugster and Lukasz
+Ziarek)
+    </li>
           </ul>
           
   </div><!-- /.container -->
