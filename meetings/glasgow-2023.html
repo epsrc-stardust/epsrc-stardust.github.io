@@ -161,7 +161,11 @@
             <li>
               <a name="ping_hou" href="/assets/slides/glasgow22/ping_hou.pdf" class=".header-text">Designing Asynchronous Multiparty Protocols with Crash-Stop Failures</a> (Ping Hou, Oxford)
               <br>
-              TBA
+              Session types provide a typing discipline for message-passing systems. However, most session type approaches assume an ideal world: one in which everything is reliable and without failures. Yet this is in stark contrast with distributed systems in the real world. To address this limitation, we introduce Teatrino, a code generation toolchain that utilises asynchronous multiparty session types (MPST) with crash-stop semantics to support failure handling protocols.
+
+              We augment asynchronous MPST and processes with crash handling branches. Our approach requires no user-level syntax extensions for global types and features a formalisation of global semantics, which captures complex behaviours induced by crashed/crash handling processes. The sound and complete correspondence between global and local type semantics guarantees deadlock- freedom, protocol conformance, and liveness of typed processes in the presence of crashes.
+
+              Our theory is implemented in the toolchain Teatrino, which provides correctness by construction. Teatrino extends the Scribble multiparty protocol language to generate protocol-conforming Scala code, using the Effpi concurrent programming library. We extend both Scribble and Effpi to support crash-stop behaviour. We demonstrate the feasibility of our methodology and evaluate Teatrino with examples extended from both session type and distributed systems literature.
             </li>
             <li>
               <a name="duncan_paul_attard" href="/assets/slides/glasgow22/duncan_paul_attard.pdf" class=".header-text">Towards Mailbox Typing for Erlang</a> (Duncan Paul Attard, Glasgow)
@@ -174,9 +178,9 @@
               TBA
             </li>
             <li>
-              <a name="amrita_suresh" href="/assets/slides/glasgow22/simon_fowler.pdf" class=".header-text">Synchronisability and Communicating Session Automata</a> (Amrita Suresh, Oxford)
+              <a name="amrita_suresh" href="/assets/slides/glasgow22/amrita_suresh.pdf" class=".header-text">Synchronisability and Communicating Session Automata</a> (Amrita Suresh, Oxford)
               <br>
-              TBA
+              In this talk, I will mainly focus on some of the results of my PhD thesis, and highlight some areas of research we are currently investigating. A large part of my thesis included studying the model of communicating automata, i.e. concurrent processes communicating asynchronously via FIFO channels. Since these models are known to have undecidable verification properties, we investigated various subclasses of these automata. In this talk, I will focus mainly on the notion of synchronisability. Roughly, a system is called synchronisable if every execution can be rescheduled so that it meets certain criteria, e.g. a channel bound. However, since there are a lot of conflicting definitions in the literature regarding this notion, we provided a framework that unifies existing definitions and proves decidability (or when the case may be, undecidability) results for these classes. Moreover, I will also talk about some of the current extensions to communicating automata that I am working on, in order to extend these results to potentially faulty communication channels.
             </li>
             <li>
               <a name="simon_fowler" href="/assets/slides/glasgow22/simon_fowler.pdf" class=".header-text">Event-Driven Multiparty Session Actors</a> (Simon Fowler, Glasgow)
