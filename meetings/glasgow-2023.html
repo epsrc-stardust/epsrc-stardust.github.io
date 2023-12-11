@@ -49,9 +49,9 @@
         <div class="col-md-12">
 
           <h2 class="featurette-heading">Location</h2>
-          <p>The meeting will be held on December 18th and 19th 2023 at the University of Glasgow (Sir Alwyn Williams Building, see
+          <p>The meeting will be held on December 18th and 19th, 2023, at the University of Glasgow (Sir Alwyn Williams Building, see
           <a target="_blank" href="https://www.gla.ac.uk/media/Media_521847_smxx.pdf">map</a>, in rooms 422 and 423).
-          The meeting will be held both in person and hybrid sessions.
+          The meeting will be held in both in-person and hybrid sessions. 
           Instructions on how to join the hybrid sessions will be sent via email.
           In case of problems or further information, contact <a href="mailto:simon.fowler@glasgow.ac.uk">Simon Fowler</a>.</p>
 
@@ -60,7 +60,7 @@
             <tr>
               <td>09:00 - 09:25</td>
               <td>Arrival and coffee</td>
-              <td>SAWB 423</td>
+              <td>Outside SAWB 423</td>
             </tr>
             <tr>
               <td>09:25 - 10:00</td>
@@ -75,7 +75,7 @@
             <tr>
               <td>10:30 - 11:00</td>
               <td>Coffee</td>
-              <td>SAWB 423</td>
+              <td>Outside SAWB 423</td>
             </tr>
             <tr>
               <td>11:00 - 12:00</td>
@@ -89,7 +89,7 @@
             <tr>
               <td>12:00 - 13:30</td>
               <td>Lunch</td>
-              <td>Foyer</td>
+              <td>Outside SAWB 423</td>
             </tr>
             <tr>
               <td>13:30 - 14:30</td>
@@ -103,7 +103,7 @@
             <tr>
               <td>14:30 - 15:00</td>
               <td>Coffee</td>
-              <td>SAWB 423</td>
+              <td>Outside SAWB 423</td>
             </tr>
             <tr>
               <td>15:00 - 17:00</td>
@@ -126,7 +126,7 @@
             <tr>
               <td>09:00 - 09:30</td>
               <td>Coffee</td>
-              <td>SAWB 422</td>
+              <td>Outside SAWB 422</td>
             </tr>
             <tr>
               <td>09:30 - 11:00</td>
@@ -138,7 +138,7 @@
             <tr>
               <td>11:00 - 11:30</td>
               <td>Coffee</td>
-              <td>SAWB 422</td>
+              <td>Outside SAWB 422</td>
             </tr>
             <tr>
               <td>11:30 - 12:00</td>
@@ -146,72 +146,24 @@
                 <p>Industry session</p>
                 <p>11:30: Discussion of issues and ideas from industry partners</p>
               </td>
-              <td>SAWB 423</td>
+              <td>SAWB 422</td>
             </tr>
             <tr>
               <td>12:00</td>
               <td>Closing and lunch</td>
-              <td>SAWB 422</td>
+              <td>TBA</td>
             </tr>
           </table>
 
-         <h2 class="featurette-heading">Abstracts & Slides</h2>
+         <h2 class="featurette-heading">Abstracts and slides</h2>
 
           <ul>
-            <li > <a name="glasgow_talk2" href="/assets/slides/kent22/duncan.pdf" class=".header-text ">A Monitoring Tool for Linear-Time &#181;HML  </a>(by Duncan Attard)<br>
-            We present the implementation of a prototype tool that runtime checks specifications written in a maximally-expressive safety fragment of the linear-time modal &#181;-calculus
-            called maxHML. Our technical development is founded on previous results that give a compositional synthesis procedure for generating monitors from maxHML formulae.
-            This paper instantiates this synthesis to a first-order setting, where systems produce executions containing events that carry data. We augment the logic with
-            predicates over data, and extend the synthesis procedure to generate executable monitors for Erlang, a general-purpose programming language. These monitors are instrumented via inlining to induce minimal runtime overhead. Our monitoring algorithm also maintains information, which it uses to explain how verdicts are reached.
-            (joint work with Luca Aceto, Antonis Achilleos, L&#233;o Exibard, Adrian Francalanza, and Anna Ing&oacute;lfsd&oacute;ttir).
+            <li>
+              <a name="simon_fowler" href="/assets/slides/kent22/duncan.pdf" class=".header-text">Event-Driven Multiparty Session Actors</a> (Simon Fowler)
+              <br>
+              Actor languages such as Erlang and Elixir have emerged as popular tools for designing reliable, fault-tolerant distributed applications, but communication patterns used by actors are often informally specified. Multiparty session types (MPSTs) are a type discipline for communication protocols: if a program typechecks according to its session type, then it is guaranteed to fulfil its role in a communication protocol, but the unidirectional communication mechanism used by actors makes it difficult to apply session types to actor languages directly. By combining a flow-sensitive effect system with an event-driven programming model, we show the first statically-typed session type system for actors that can participate in multiple sessions.
             </li>
-            <li > <a name="kent_talk" href="/assets/slides/kent22/laura.pdf" class=".header-text ">A model of grey failure for actor-based systems  </a>(by Laura Bocchi)<br>
-            Existing models for the analysis of concurrent processes tend to focus on fail-stop failures, where processes are either working or permanently stopped, and their state (working/stopped) is known.
-            In fact, systems are often affected by grey failures: failures that are latent, possibly transient, and may affect the system in subtle ways that later lead to major issues (such as crashes, limited availability, overload).
-            We introduce a model of actor-based systems with grey failures, based on two interlinked layers: an actor model, given as an asynchronous process calculus with discrete time, and a failure model that represents failure
-            patterns to inject in the system. Our failure model captures not only fail-stop node and link failures, but also grey failures (e.g., partial, transient). We give a behavioural
-            equivalence relation based on weak barbed bisimulation to compare systems on the basis of their ability to recover from failures, and on this basis we define some desirable
-            properties of reliable systems. By doing so, we reduce the problem of checking reliability properties of systems to the problem of checking bisimulation.
-            (joint work with Julien Lange, Simon Thompson, and Laura Voinea)
-            </li>
-            <li > <a name="glasgow_talk" href="/assets/slides/kent22/simon.pdf" class=".header-text ">Special Delivery: Programming with Mailbox Types  </a>(by Simon Fowler)<br>
-            Actor-based languages such as Erlang and Elixir are well-suited to distributed programming due to the concept of a *mailbox*:
-            a message queue local to each thread of execution. However, actor languages are vulnerable to subtle yet insidious programmer errors
-            such as protocol violations and communication mismatches, which can be difficult to locate and fix. Mailbox types, proposed by de'Liguoro and Padovani
-            in 2018, are a behavioural type system which captures the contents of a mailbox using a commutative regular expression, and can rule out common
-            communication errors such as protocol violations, payload mismatches, and some deadlocks. In this work, we present the first theoretical
-            and practical integration of mailbox types into a programming language. Unlike session type systems, the many-writer, single-reader nature of
-            mailboxes poses nontrivial challenges for language integration. We address these challenges through the use of Kobayashi's notion of quasi-linearity,
-            and develop a co-contextual algorithmic type system based on backwards bidirectional typing. (joint work with Simon Gay, Phil Trinder, and Franciszek Sowul)
-            </li>
-            <li><a name="ext" href="/assets/slides/kent22/ray.pdf" class=".header-text ">A Multiparty Session Typing Discipline for Fault-Tolerant Event-Driven Distributed Programming</a> (by Raymond Hu)<br>
-            Multiparty Session Types (MSTs) is a types systems approach to specifying multiparty message passing protocols and verifying their process implementations.
-            A long standing challenge for MSTs is reasoning about failure handling of protocol participants -- a crucial requirement for practical applicability of MSTs to many
-            distributed systems. In this work, we draw inspiration from real-world distributed systems, notably Apache Spark, to develop an MST framework for fault-tolerant application
-            protocols, supported by an event-driven model of session concurrency.  Our framework ensures communication safety and progress for well-typed systems in
-            the presence of asynchronous and concurrent process failures; moreover, event-driven concurrency enables progress in the presence of multiple,
-            concurrently interleaved sessions, which is not guaranteed in traditional session calculi. We have used our prototype Scala toolchain to implement a session-typed
-            version of the Spark cluster manager, which is fully capable of running existing third-party Spark user applications without any code modification.
-            (joint work with Malte Viering, Patrick Eugster and Lukasz Ziarek)
-            </li>
-            <li><a name="imperial_talk2" href="/assets/slides/kent22/nicolas.pdf" class=".header-text ">Stay Safe under Panic: Affine Rust Programming with Multiparty Session Types</a> (by Nicolas Lagaillardie)<br>
-           Communicating systems comprise diverse software components across networks. To ensure their robustness, modern programming languages such as Rust provide both strongly typed
-           channels, whose usage is guaranteed to be affine (at most once), and cancellation operations over binary channels. For coordinating components to correctly communicate and
-           synchronise with each other, we use the structuring mechanism from multiparty session types, extending it with affine communication channels and implicit/explicit cancellation
-           mechanisms. This new typing discipline, affine multiparty session types (AMPST), ensures cancellation termination of multiple, independently running components and guarantees that
-           communication will not get stuck due to error or abrupt termination. Guided by AMPST, we implemented an automated generation tool (MultiCrusty) of Rust APIs associated with
-           cancellation termination algorithms, by which the Rust compiler auto-detects unsafe programs. Our evaluation shows that MultiCrusty provides an efficient mechanism for communication,
-           synchronisation and propagation of the notifications of cancellation for arbitrary processes. We have implemented several usecases, including popular application protocols
-           (OAuth, SMTP), and protocols with exception handling patterns (circuit breaker, distributed logging).
-           (joint work with Rumyana Neykova, and Nobuko Yoshida)
-    </li>
-            <li><a name="imperial_talk1" href="/assets/slides/kent22/fangyi.pdf" class=".header-text ">Generalised Multiparty Session Types with Crash-Stop Failures</a> (by Fangyi Zhou)<br>
-           Session types enable the specification and verification of communicating systems. However, their theory often assumes that processes never fail. To address this limitation, we present a generalised multiparty session type (MPST) theory with crash-stop failures, where processes can crash arbitrarily.
-Our new theory validates more protocols and processes w.r.t. previous work. We apply minimal syntactic changes to standard session pi-calculus and types: we model crashes and their handling semantically, with a generalised MPST typing system parametric on a behavioural safety property.
-We cover the spectrum between fully reliable and fully unreliable sessions, via optional reliability assumptions, and prove type safety and protocol conformance in the presence of crash-stop failures.
-Introducing crash-stop failures has non-trivial consequences: writing correct processes that handle all possible crashes can be difficult. Yet, our generalised MPST theory allows us to tame this complexity, via model checkers, to validate whether a multiparty session satisfies desired behavioural properties, e.g. deadlock-freedom or liveness. We implement our approach using the mCRL2 model checker,
-and evaluate it with examples extended from the literature. (joint work with Adam D. Barwell, Alceste Scalas, and Nobuko Yoshida)
-    </li>
+            
            </ul>
           </ul>
   </div><!-- /.container -->
