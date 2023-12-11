@@ -81,7 +81,7 @@
               <td>11:00 - 12:00</td>
               <td>
                 <p><b>Technical session 2</b></p>
-                <p>11:00: <a href="#talk_3">TBA</a> (TBA, Kent)</p>
+                <p>11:00: <a href="#simon_thompson">Erlang Semantics in Coq</a> (Simon Thompson, Kent)</p>
                 <p>11:30: <a href="#amrita_suresh">Synchronisability and Communicating Session Automata</a> (Amrita Suresh, Oxford)</p>
               </td>
               <td>SAWB 423</td>
@@ -109,7 +109,7 @@
               <td>15:00 - 17:00</td>
               <td>
                 <p><b>Technical session 4 and discussion</b></p>
-                <p>15:00: <a href="#talk_4">TBA</a> (TBA, Kent)</p>
+                <p>15:00: <a href="#andy_king">Asynchronous Subtyping by Trace Relaxation</a> (Andy King, Kent)</p>
                 <p>15:30: Structured discussion</p>
               </td>
               <td>SAWB 423</td>
@@ -155,9 +155,8 @@
             </tr>
           </table>
 
-         <h2 class="featurette-heading">Abstracts and slides</h2>
-
-          <ul>
+          <h2 class="featurette-heading">Abstracts and slides</h2>
+          <ol>
             <li>
               <a name="ping_hou" href="/assets/slides/glasgow22/ping_hou.pdf" class=".header-text">Designing Asynchronous Multiparty Protocols with Crash-Stop Failures</a> (Ping Hou, Oxford)
               <br>
@@ -173,9 +172,9 @@
               TBA
             </li>
             <li>
-              <a name="talk_3" href="/assets/slides/glasgow22/talk_3.pdf" class=".header-text">TBA</a> (TBA, Kent)
+              <a name="simon_thompson" href="/assets/slides/glasgow22/simon_thompson.pdf" class=".header-text">Erlang Semantics in Coq</a> (Simon Thompson, Kent, with Peter Bereczky and D&aacute;niel Horp&aacute;csi from E&ouml;tv&ouml;s Lor&aacute;nd University, Budapest)
               <br>
-              TBA
+              After describing the context of this work - a longer-term project to make refactoring trustworthy - the talk will describe a semantics for the essential aspects of Erlang fully formalised in the Coq theorem prover. The semantics has three. modular, layers: the sequential layer, the process-local layer and the inter-process layer. A number of properties are proved, and notions of program equivalence are also presented. The talk will conclude with a discussion of potential links between this work and the STARDUST project.
             </li>
             <li>
               <a name="amrita_suresh" href="/assets/slides/glasgow22/amrita_suresh.pdf" class=".header-text">Synchronisability and Communicating Session Automata</a> (Amrita Suresh, Oxford)
@@ -193,12 +192,11 @@
               TBA
             </li>
             <li>
-              <a name="talk_4" href="/assets/slides/glasgow22/talk_4.pdf" class=".header-text">TBA</a> (TBA, Kent)
+              <a name="andy_king" href="/assets/slides/glasgow22/andy_king.pdf" class=".header-text">Asynchronous Subtyping by Trace Relaxation</a> (Andy King, Kent)
               <br>
-              TBA
+              Session subtyping answers the question of whether a program in a communicating system can be safely substituted for another, when their communication behaviours are described by session types. Asynchronous session subtyping is undecidable, hence the interest in devising sound, although incomplete, subtyping algorithms. Asynchronous subtyping is formulated in terms of a data-structure called input trees. We show how input trees can be replaced with sets of traces which opens up opportunities for applying abstract interpretation techniques to the problem of session subtyping. Sets of traces which can be relaxed (enlarged) whilst still allowing subtyping to be observed. In particular, relaxations can be chosen which can be finitely represented, even when the input trees are arbitrarily large. We instantiate this strategy using regular expressions and show that it allows subtyping to be mechanically proven for communication patterns that were previously out of reach.
             </li>
-           </ul>
-          </ul>
+          </ol>
   </div><!-- /.container -->
 
 
