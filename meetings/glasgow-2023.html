@@ -96,7 +96,7 @@
               <td>
                 <p><b>Technical session 3</b></p>
                 <p>13:30: <a href="#simon_fowler">Event-Driven Multiparty Session Actors</a> (Simon Fowler, Glasgow)</p>
-                <p>14:00: <a href="#roland_kuhn">TBA</a> (Roland Kuhn, Actyx)</p>
+                <p>14:00: <a href="#roland_kuhn">Behavioural Types for Local-First Software</a> (Roland Kuhn, Actyx)</p>
               </td>
               <td>SAWB 423</td>
             </tr>
@@ -187,9 +187,9 @@
               Actor languages such as Erlang and Elixir have emerged as popular tools for designing reliable, fault-tolerant distributed applications, but communication patterns used by actors are often informally specified. Multiparty session types (MPSTs) are a type discipline for communication protocols: if a program typechecks according to its session type, then it is guaranteed to fulfil its role in a communication protocol, but the unidirectional communication mechanism used by actors makes it difficult to apply session types to actor languages directly. By combining a flow-sensitive effect system with an event-driven programming model, we show the first statically-typed session type system for actors that can participate in multiple sessions.
             </li>
             <li>
-              <a name="roland_kuhn" href="/assets/slides/glasgow22/roland_kuhn.pdf" class=".header-text">TBA</a> (Roland Kuhn, Actyx)
+              <a name="roland_kuhn" href="/assets/slides/glasgow22/roland_kuhn.pdf" class=".header-text">Behavioural Types for Local-First Software</a> (Roland Kuhn, Actyx)
               <br>
-              TBA
+              Peer-to-peer systems are the most resilient form of distributed computing, but the design of robust protocols for their coordination is difficult. This makes it hard to specify and reason about global behaviour of such systems. This paper presents swarm protocols to specify such systems from a global viewpoint. Swarm protocols are projected to machines, that is local specifications of peers. This paper introduces an execution model based on log shipping to mitigate this. More precisely, we present specify systems from a global viewpoint, which are projected to machines that yield local specifications. We take inspiration from behavioural types with a key difference: peers communicate through an event notification mechanism rather than through point-to-point message passing. Our goal is to adhere to the principles of local-first software where network devices collaborate on a common task while retaining full autonomy: every participating device can locally make progress at all times, not encumbered by unavailability of other devices or network connections. This coordination-free approach leads to inconsistencies that may emerge during computations. Our main result shows that under suitable well-formedness conditions for swarm protocols consistency is eventually recovered and the locally observable behaviour of conforming machines will eventually match the global specification. The model we propose elaborates on an existing industrial platform and provides the basis for tool support (sketched here and fully described in a companion artifact paper), wherefore we consider this work to be a viable step towards reasoning about local-first and peer-to-peer software systems.
             </li>
             <li>
               <a name="andy_king" href="/assets/slides/glasgow22/andy_king.pdf" class=".header-text">Asynchronous Subtyping by Trace Relaxation</a> (Andy King, Kent)
