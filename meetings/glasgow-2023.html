@@ -131,7 +131,7 @@
             <tr>
               <td>09:30 - 11:00</td>
               <td>
-                <p><b>Status reports and discussion</b></p>
+                  <p><b><a href="#status_reports">Status reports and discussion</a></b></p>
               </td>
               <td>SAWB 422</td>
             </tr>
@@ -155,10 +155,18 @@
             </tr>
           </table>
 
+          <h2 name="status_reports" class="featurette-heading">Status reports</h2>
+            <ol>
+              <li><a href="/assets/slides/glasgow23/gay.pdf">Glasgow (Simon Gay)</a></li>
+              <li><a href="">Kent (Laura Bocchi)</a></li>
+              <!-- <li><a href="/assets/slides/glasgow23/bocchi.pdf">Kent (Laura Bocchi)</a></li> -->
+              <li><a href="/assets/slides/glasgow23/yoshida.pdf">Oxford (Nobuko Yoshida)</a></li>
+            </ol>
+
           <h2 class="featurette-heading">Abstracts and slides</h2>
           <ol>
             <li>
-              <a name="ping_hou" href="/assets/slides/glasgow22/ping_hou.pdf" class=".header-text">Designing Asynchronous Multiparty Protocols with Crash-Stop Failures</a> (Ping Hou, Oxford)
+              <a name="ping_hou" href="/assets/slides/glasgow23/hou.pdf" class=".header-text">Designing Asynchronous Multiparty Protocols with Crash-Stop Failures</a> (Ping Hou, Oxford)
               <br>
               Session types provide a typing discipline for message-passing systems. However, most session type approaches assume an ideal world: one in which everything is reliable and without failures. Yet this is in stark contrast with distributed systems in the real world. To address this limitation, we introduce Teatrino, a code generation toolchain that utilises asynchronous multiparty session types (MPST) with crash-stop semantics to support failure handling protocols.
 
@@ -167,32 +175,33 @@
               Our theory is implemented in the toolchain Teatrino, which provides correctness by construction. Teatrino extends the Scribble multiparty protocol language to generate protocol-conforming Scala code, using the Effpi concurrent programming library. We extend both Scribble and Effpi to support crash-stop behaviour. We demonstrate the feasibility of our methodology and evaluate Teatrino with examples extended from both session type and distributed systems literature.
             </li>
             <li>
-              <a name="duncan_paul_attard" href="/assets/slides/glasgow22/duncan_paul_attard.pdf" class=".header-text">Towards Mailbox Typing for Erlang</a> (Duncan Paul Attard, Glasgow)
+                <!-- <a name="duncan_paul_attard" href="/assets/slides/glasgow23/attard.pdf" class=".header-text">Towards Mailbox Typing for Erlang</a> (Duncan Paul Attard, Glasgow) -->
+                <a name="duncan_paul_attard" href="" class=".header-text">Towards Mailbox Typing for Erlang</a> (Duncan Paul Attard, Glasgow)
               <br>
               This talk summarises our current work on mailbox typing applied to Erlang to uncover specific communication errors statically. We introduce mailbox typing, a behavioural typing discipline which naturally fits idiomatic actor-style programming. We position our mailbox typing approach in the context of existing error detection tools currently used in Erlang. Our exposition focuses on instantiating mailbox typing to a programming language and the challenges in mapping this concept to Erlang actors having one implicit mailbox. We highlight our progress in designing a tool for Erlang that leverages prior work and the direction we intend to follow next.
             </li>
             <li>
-              <a name="simon_thompson" href="/assets/slides/glasgow22/simon_thompson.pdf" class=".header-text">Erlang Semantics in Coq</a> (Simon Thompson, Kent, with Peter Bereczky and D&aacute;niel Horp&aacute;csi from E&ouml;tv&ouml;s Lor&aacute;nd University, Budapest)
+              <a name="simon_thompson" href="/assets/slides/glasgow23/thompson.pdf" class=".header-text">Erlang Semantics in Coq</a> (Simon Thompson, Kent, with Peter Bereczky and D&aacute;niel Horp&aacute;csi from E&ouml;tv&ouml;s Lor&aacute;nd University, Budapest)
               <br>
               After describing the context of this work - a longer-term project to make refactoring trustworthy - the talk will describe a semantics for the essential aspects of Erlang fully formalised in the Coq theorem prover. The semantics has three modular, layers: the sequential layer, the process-local layer and the inter-process layer. A number of properties are proved, and notions of program equivalence are also presented. The talk will conclude with a discussion of potential links between this work and the STARDUST project.
             </li>
             <li>
-              <a name="amrita_suresh" href="/assets/slides/glasgow22/amrita_suresh.pdf" class=".header-text">Synchronisability and Communicating Session Automata</a> (Amrita Suresh, Oxford)
+              <a name="amrita_suresh" href="/assets/slides/glasgow23/suresh.pdf" class=".header-text">Synchronisability and Communicating Session Automata</a> (Amrita Suresh, Oxford)
               <br>
               In this talk, I will mainly focus on some of the results of my PhD thesis, and highlight some areas of research we are currently investigating. A large part of my thesis included studying the model of communicating automata, i.e. concurrent processes communicating asynchronously via FIFO channels. Since these models are known to have undecidable verification properties, we investigated various subclasses of these automata. In this talk, I will focus mainly on the notion of synchronisability. Roughly, a system is called synchronisable if every execution can be rescheduled so that it meets certain criteria, e.g. a channel bound. However, since there are a lot of conflicting definitions in the literature regarding this notion, we provided a framework that unifies existing definitions and proves decidability (or when the case may be, undecidability) results for these classes. Moreover, I will also talk about some of the current extensions to communicating automata that I am working on, in order to extend these results to potentially faulty communication channels.
             </li>
             <li>
-              <a name="simon_fowler" href="/assets/slides/glasgow22/simon_fowler.pdf" class=".header-text">Event-Driven Multiparty Session Actors</a> (Simon Fowler, Glasgow)
+              <a name="simon_fowler" href="/assets/slides/glasgow23/fowler.pdf" class=".header-text">Event-Driven Multiparty Session Actors</a> (Simon Fowler, Glasgow)
               <br>
               Actor languages such as Erlang and Elixir have emerged as popular tools for designing reliable, fault-tolerant distributed applications, but communication patterns used by actors are often informally specified. Multiparty session types (MPSTs) are a type discipline for communication protocols: if a program typechecks according to its session type, then it is guaranteed to fulfil its role in a communication protocol, but the unidirectional communication mechanism used by actors makes it difficult to apply session types to actor languages directly. By combining a flow-sensitive effect system with an event-driven programming model, we show the first statically-typed session type system for actors that can participate in multiple sessions.
             </li>
             <li>
-              <a name="roland_kuhn" href="/assets/slides/glasgow22/roland_kuhn.pdf" class=".header-text">Behavioural Types for Local-First Software</a> (Roland Kuhn, Actyx)
+              <a name="roland_kuhn" href="/assets/slides/glasgow23/kuhn.pdf" class=".header-text">Behavioural Types for Local-First Software</a> (Roland Kuhn, Actyx)
               <br>
               Peer-to-peer systems are the most resilient form of distributed computing, but the design of robust protocols for their coordination is difficult. This makes it hard to specify and reason about global behaviour of such systems. This paper presents swarm protocols to specify such systems from a global viewpoint. Swarm protocols are projected to machines, that is local specifications of peers. This paper introduces an execution model based on log shipping to mitigate this. More precisely, we present specify systems from a global viewpoint, which are projected to machines that yield local specifications. We take inspiration from behavioural types with a key difference: peers communicate through an event notification mechanism rather than through point-to-point message passing. Our goal is to adhere to the principles of local-first software where network devices collaborate on a common task while retaining full autonomy: every participating device can locally make progress at all times, not encumbered by unavailability of other devices or network connections. This coordination-free approach leads to inconsistencies that may emerge during computations. Our main result shows that under suitable well-formedness conditions for swarm protocols consistency is eventually recovered and the locally observable behaviour of conforming machines will eventually match the global specification. The model we propose elaborates on an existing industrial platform and provides the basis for tool support (sketched here and fully described in a companion artifact paper), wherefore we consider this work to be a viable step towards reasoning about local-first and peer-to-peer software systems.
             </li>
             <li>
-              <a name="andy_king" href="/assets/slides/glasgow22/andy_king.pdf" class=".header-text">Asynchronous Subtyping by Trace Relaxation</a> (Andy King, Kent)
+              <a name="andy_king" href="/assets/slides/glasgow23/king.pdf" class=".header-text">Asynchronous Subtyping by Trace Relaxation</a> (Andy King, Kent)
               <br>
               Session subtyping answers the question of whether a program in a communicating system can be safely substituted for another, when their communication behaviours are described by session types. Asynchronous session subtyping is undecidable, hence the interest in devising sound, although incomplete, subtyping algorithms. Asynchronous subtyping is formulated in terms of a data-structure called input trees. We show how input trees can be replaced with sets of traces which opens up opportunities for applying abstract interpretation techniques to the problem of session subtyping. Sets of traces which can be relaxed (enlarged) whilst still allowing subtyping to be observed. In particular, relaxations can be chosen which can be finitely represented, even when the input trees are arbitrarily large. We instantiate this strategy using regular expressions and show that it allows subtyping to be mechanically proven for communication patterns that were previously out of reach.
             </li>
